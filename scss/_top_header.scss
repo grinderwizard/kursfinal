@@ -1,0 +1,56 @@
+.top-header {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	height: 50px;
+	background-color: #1abc9c;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	a {
+		color: #fff;
+	}
+}
+
+.contact-info {
+	padding: 0;
+}
+
+.contact-info ul li {
+	margin-right: 34px;
+	display: flex;
+	align-items: center;
+	a {
+		letter-spacing: -0.5px;
+
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+	i {
+		font-size: 20px;
+		margin-right: 4px;
+	}
+	i.pe-7s-mail {
+		font-size: 25px;
+		margin-right: 9px;
+	}
+}
+
+
+.login-menu ul {
+	li {
+		margin-left: 34px;
+		i {
+			margin-right: 8px;
+		}
+	}
+	a {
+		letter-spacing: -0.28px;
+		transition: 0.3s ease;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

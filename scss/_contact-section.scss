@@ -1,0 +1,149 @@
+
+
+.left-contact {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-right: 0;
+
+	.logo-footer {
+		margin-bottom: 28px;
+	}
+
+	.headline {
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: -0.36px;
+		font-family: "Roboto";
+		line-height: 1;
+		margin-bottom: 25px;
+	}
+
+	.text {
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 300;
+		margin-bottom: 37px;
+		line-height: 25px;
+	}
+
+	ul.contacts {
+		span {
+			color: #46bfa9;
+			font-weight: 700;
+			letter-spacing: -0.28px;
+			font-family: Roboto;
+
+		}
+
+		a {
+			color: #fff;
+			font-size: 14px;
+			font-weight: 300;
+		}
+	}
+
+	ul.share-links {
+		display: flex;
+		flex-direction: row;
+		margin-top: 16px;
+
+		li {
+			margin-right: 9px;
+		}
+
+		li a {
+			width: 30px;
+			height: 30px;
+			color: #fff;
+			border: 1px solid #ffffff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: 0.3s ease;
+		}
+
+		li a:hover {
+			border: 1px solid #46bfa9;
+			background-color: #46bfa9;
+		}
+	}
+}
+
+
+
+
+.right-form {
+
+
+	form {
+
+
+		.form-holder {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		input,
+		textarea {
+			background: none;
+			border: 1px solid #ffffff;
+			padding-left: 19px;
+			font-family: Roboto;
+			font-size: 18px;
+			font-weight: 300;
+			letter-spacing: -0.36px;
+			color: #fff;
+			margin-bottom: 30px;
+			transition: 0.3s ease;
+
+			&::placeholder {
+				color: #fff;
+			}
+
+			&:focus {
+				border: 1px solid #46bfa9;
+				color: #46bfa9;
+
+				&::placeholder,
+					{
+					color: #46bfa9;
+				}
+			}
+		}
+
+		input {
+			height: 50px;
+			width: 260px;
+		}
+
+		textarea {
+			padding-top: 17px;
+			width: 100%;
+			line-height: 30px;
+		}
+
+		button {
+			width: 151px;
+			height: 50px;
+			background-color: #46bfa9;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #ffffff;
+			font-family: Roboto;
+			font-size: 16px;
+			letter-spacing: -0.32px;
+			line-height: 1;
+			text-transform: uppercase;
+			transition: 0.3s ease;
+			&:hover {
+				color: #000000
+			}
+		}
+	}
+
+}
+

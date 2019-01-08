@@ -1,0 +1,44 @@
+.about-us-item {
+	color: #555252;
+	cursor: pointer;
+	&__icon {
+		height: 112px;
+	}
+	&__title {
+		font-size: 18px;
+		font-weight: 600;
+		text-align: center;
+		letter-spacing: -0.36px;
+		text-transform: uppercase;
+		color: #555252;
+		margin-bottom: 30px;
+		transition: 0.3s ease
+	}
+
+	p {
+		text-align: center;
+		font-weight: 300;
+		color: #555252;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: -0.28px;
+		
+	}
+
+	i {
+		font-size: 70px;
+		text-align: center;
+		display: block;
+		transition: 0.3s ease
+	}
+	&:hover {
+		i {
+			color: #1abc9c;
+		}
+		.about-us-item__title {
+			color: #1abc9c;	
+		}
+	}
+}
+
+

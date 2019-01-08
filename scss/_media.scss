@@ -1,0 +1,338 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.product-item__hover {
+		padding: 0 13px;
+	}
+
+	.top-header {
+		font-size: 11px;
+	}
+
+	.login-menu {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	.menu-section .nav-bar-menu li {
+		margin-left: 23px;
+	}
+
+	.slider-item-info {
+		top: 30%;
+	}
+
+	.right-form form input {
+		width: 215px;
+	}
+
+	#sale-season {
+		padding: 100px 0;
+	}
+
+	section {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+
+	#best-sellers, #new-collection, #sale-season {
+		padding-bottom: 50px;
+	}
+
+
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+	
+	.slider-btn-arrow a.btn-arrow {
+    width: 70px;
+		height: 65px;
+		i {
+			font-size: 70px;
+		}
+	}
+
+	
+	.menu-section .logo img {
+		width: 100%;
+	}
+
+	.slider-item-info h1 {
+		font-size: 35px;
+	}
+
+	.right-form form .form-holder {
+		flex-direction: column
+	}
+
+	.right-form form input {
+		width: 100%;
+	}
+
+	#sale-season .desc h2 {
+		font-size: 40px;
+	}
+
+	#sale-season {
+    padding: 40px 0;
+}
+
+#sale-season .desc h2 {
+	font-size: 40px;
+}
+
+#sale-season .desc .subtitle {
+	font-size: 26px;
+}
+
+h2.bold {
+	font-size: 35px;
+}
+
+.title-section {
+	margin-bottom: 40px;
+}
+
+.about-us-item {
+	margin-bottom: 30px;
+}
+
+.product-item {
+	margin-bottom: 30px;
+}
+
+.product-item__hover {
+	padding: 0 80px;
+}
+
+.partner-item {
+	margin-bottom: 30px;
+}
+
+#our-partners {
+	padding-bottom: 20px;
+}
+
+.article-item {
+	margin-bottom: 30px;
+}
+
+
+.left-contact .headline {
+	font-size: 15px;
+}
+
+.left-contact .text {
+	font-size: 12px;
+}
+
+.left-contact {
+	padding-right: 15px;
+}
+
+#about-us {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+	.contact-info {
+		display: none;
+	}
+
+	.login-menu {
+		justify-content: flex-end;
+	}
+
+	.top-header .row {
+		justify-content: space-between;
+	}
+
+	.menu-section .nav-bar-menu {
+		display: none;
+	}
+
+	.slider-item img {
+    width: 160%;
+    margin-left: -20%;
+}
+
+.slider-item {
+	overflow: hidden;
+}
+
+.slider-item-info h1 {
+	font-size: 27px;
+}
+
+#about-us {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.product-item__hover {
+	padding: 0 30px;
+}
+
+.left-contact .headline {
+	line-height: 1.4;
+}
+
+.btn-menu {
+	display: block;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 14px;
+	left: 15px;
+	z-index: 100;
+}
+
+.top-header {
+	font-size: 15px;
+}
+
+.d-n-mobile {
+	display: none;
+}
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+	.slider-item img {
+    width: 300%;
+    margin-left: -60%;
+}
+
+.menu-section .logo {
+	padding: 0 15px; 	
+}
+
+.slider-item-info h1 {
+	font-size: 22px;
+}
+
+.slider-item-info {
+	top: 20%;
+}
+
+.slider-item-info button {
+	margin-top: 200px;
+}
+
+#sale-season .desc h2 {
+	font-size: 30px;
+}
+
+#sale-season .desc .subtitle {
+	font-size: 20px;
+}
+
+#sale-season {
+	background-size: 150%;
+	background-position: -100px 0;
+}
+
+.left-contact {
+	margin-bottom: 30px;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.product-item__hover {
+	padding: 0;
+}
+
+.button_hover {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%)
+}
+
+h2.bold {
+	font-size: 30px;
+}
+
+#contact {
+	padding-bottom: 20px;
+}
+#featured {
+	padding-bottom: 20px;
+}
+
+
+
+#news {
+    padding-bottom: 20px;
+}
+
+
+.menu-section {
+	height: 60px;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+	.slider-item-info button {
+		margin-top: 150px;
+	}
+
+	.slider-item-info h1 {
+    font-size: 19px;
+}
+
+#sale-season .desc h2 {
+	font-size: 26px;
+}
+
+#sale-season {
+	-webkit-background-size: 150% 150%;
+	background-size: 190%;
+	background-position: -140px 0;
+}
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}

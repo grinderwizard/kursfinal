@@ -1,0 +1,260 @@
+.product-item {
+	cursor: pointer;
+	position: relative;
+	font-family: "Roboto", sans-serif;
+
+	&__image {
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		letter-spacing: -0.36px;
+		font-weight: 900;
+		font-size: 18px;
+		background-color: #323232;
+		padding-left: 14px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		line-height: 1;
+		transition: 0.3s ease;
+		-webkit-transition: 0.3s ease;
+		-moz-transition: 0.3s ease;
+		-ms-transition: 0.3s ease;
+		-o-transition: 0.3s ease;
+
+		a {
+			color: #fff;
+			line-height: 1;
+		}
+	}
+
+	&__price {
+		display: flex;
+		justify-content: flex-end;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		span {
+			display: flex;
+			width: 54px;
+			height: 40px;
+			align-items: center;
+			justify-content: center;
+			background-color: rgba(255, 255, 255, 0.44);
+			text-transform: uppercase;
+			letter-spacing: -0.36px;
+			font-weight: 900;
+			color: #fff;
+			font-size: 18px;
+			line-height: 1;
+
+		}
+	}
+
+	.label {
+		text-transform: uppercase;
+		letter-spacing: -0.32px;
+		font-size: 16px;
+		font-family: "Roboto", sans-serif;
+		color: #555252;
+		border: 1px solid #000000;
+		border-radius: 0;
+		line-height: 0;
+		width: 70px;
+		height: 31px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		font-weight: 400;
+		top: 11px;
+		padding: 0;
+		transition: 0.3s ease;
+		-webkit-transition: 0.3s ease;
+		-moz-transition: 0.3s ease;
+		-ms-transition: 0.3s ease;
+		-o-transition: 0.3s ease;
+	}
+
+	.label.label-new {
+		left: 13px;
+	}
+
+
+	.label.label-sale {
+		right: 13px;
+	}
+}
+
+.product-item__hover {
+	z-index: 10;
+	border: 10px solid rgba(255, 255, 255, 0.7);
+	background-color: rgba(0, 0, 0, 0.55);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 39px;
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+
+	i {
+		font-size: 30px;
+	}
+
+	button {
+		width: 50px;
+		height: 50px;
+		border: 1px solid #ffffff;
+		transition: 0.3s ease;
+		-webkit-transition: 0.3s ease;
+		-moz-transition: 0.3s ease;
+		-ms-transition: 0.3s ease;
+		-o-transition: 0.3s ease;
+
+		&:hover {
+			border: 1px solid #1abc9c;
+			background-color: #1abc9c;
+		}
+
+	}
+
+	.add-to-card {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		line-height: 1;
+		display: flex;
+		font-weight: 400;
+		font-size: 14px;
+		font-family: "Open Sans";
+		text-transform: uppercase;
+		background-color: #323232;
+		position: relative;
+		padding: 0;
+		padding-left: 40px;
+
+		i {
+			position: absolute;
+			top: 11px;
+			left: 13px;
+			font-size: 26px;
+		}
+	}
+
+	.row-btn {
+		margin-bottom: 7px;
+
+		button {
+			margin-right: 8px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+}
+
+.product-item:hover {
+	.product-item__title {
+		background-color: #1abc9c;
+	}
+
+	.product-item__hover {
+		opacity: 1;
+	}
+
+	.label {
+		opacity: 0;
+	}
+}
+
+
+.row-items {
+	margin-bottom: 30px;
+}
+
+
+
+
+.tabs {
+	margin-bottom: 100px;
+
+	ul {
+		flex-wrap: wrap;
+	}
+
+	&-count {
+		position: absolute;
+    top: -36px;
+    right: -12px;
+		background-color: #fff;
+		width: 38px;
+		height: 38px;
+		border: 1px solid #323232;
+		background-color: #ffffff;
+		border-radius: 15rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #1abc9c;
+		font-family: "Roboto";
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: -0.4px;
+		line-height: 1;
+
+	}
+
+	&-item.active {
+		a {
+			background-color: #1abc9c;
+			color: #fff;
+			border: 1px solid #1abc9c;
+		}
+	}
+
+	&-item {
+		margin: 0 7px;
+		position: relative;
+
+		a {
+			text-transform: uppercase;
+			color: #555252;
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: -0.32px;
+			line-height: 1;
+			padding: 4px 10px;
+			border: 1px solid #959595;
+			background-color: #ffffff;
+			border-radius: 5px;
+			transition: 0.3s ease;
+		}
+		&:hover {
+			a {
+				background-color: #1abc9c;
+				color: #fff;
+				border: 1px solid #1abc9c;
+			}
+		
+		}
+	}
+}
